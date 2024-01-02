@@ -1,0 +1,12 @@
+Tuesday - create buttons, then add and remove story function
+Wednesday - edit story function and edit name
+Thursday - Fix layout
+Friday - Fav button, persist numberOfLikes
+
+Saturday - login page plus user database
+Sunday - extend project
+
+Question
+need to implement users?
+probably have to direct user to new page for editing and adding story
+

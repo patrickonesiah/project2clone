@@ -54,6 +54,29 @@
       ]
     },
     {
+      "id": 3,
+      "storyTitle": "Unexpected allergy reaction",
+      "storyDescription": "His lips was swollen after eating a kung pao chicken with cashew nuts. I was so worried as he was wheezing and breathing fast. I brought him to the nearest hospital.",
+      "childFirstName": "Luke",
+      "childLastName": "Dunphy",
+      "authorFirstName": "Kate",
+      "authorLastName": "Dunphy",
+      "relationship": "mother",
+      "writtenDate": "2023-04-08T00:00:00.000Z",
+      "numberOfLikes": 1,
+      "birthOrder": "second",
+      "storyMainImage": "https://images.everydayhealth.com/images/skin-beauty/hives/treating-hives-in-kids-722x406.jpg",
+      "whoHasSeen": [
+        {
+          "name": "Justin Doe",
+          "phone": "877-123-1212",
+          "email": "Justin_Dunphy@gmail.com",
+          "hasLiked": true,
+          "relationship": "grandfather"
+        }
+      ]
+    },
+    {
       "id": 4,
       "storyTitle": "Grandma and grandpa came to visit me",
       "storyDescription": "Had great time getting to see grandpa for the first time. He made silly actions and I copied him. Grandma was very nice to me",
@@ -66,6 +89,29 @@
       "numberOfLikes": 1,
       "birthOrder": "second",
       "storyMainImage": "https://chicagoparent.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2021/03/grandparents-visiting-kids-tips-cdc-photo-credit-istock-rgstudio.jpg",
+      "whoHasSeen": [
+        {
+          "name": "Justin Doe",
+          "phone": "877-123-1212",
+          "email": "Justin_Dunphy@gmail.com",
+          "hasLiked": true,
+          "relationship": "grandfather"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "storyTitle": "Animal Sounds",
+      "storyDescription": "Learned about animls from the zoo. Cow says \"Moo!\"",
+      "childFirstName": "Luke",
+      "childLastName": "Dunphy",
+      "authorFirstName": "Kate",
+      "authorLastName": "Dunphy",
+      "relationship": "mother",
+      "writtenDate": "2023-04-08T00:00:00.000Z",
+      "numberOfLikes": 1,
+      "birthOrder": "second",
+      "storyMainImage": "https://nurturey.com/blog/wp-content/uploads/2017/07/zoo_sheep.jpg",
       "whoHasSeen": [
         {
           "name": "Justin Doe",

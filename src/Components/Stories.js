@@ -6,7 +6,7 @@ function Stories() {
     const [stories,setStories] = useState([]);
 
     const fetchResources = async () => {
-        const storiesResponse = await fetch("http://127.0.0.1:3001/stories")
+        const storiesResponse = await fetch("http://localhost:3001/stories")
         const stories = await storiesResponse.json()
         setStories(stories)
     }
@@ -14,12 +14,20 @@ function Stories() {
     useEffect(() => {
         fetchResources();
     }, []);
+
+    function handleDeleteStories(id) {
+        const updatedStoriesArray = stories.filter(
+          (story) => story.id !== id
+        );
+        setStories(updatedStoriesArray);
+      } 
+
  
     const storiesCards = stories.map((storyObj)=>(
         <Story 
         key={storyObj.id}
         stories={storyObj}
-        // onDeleteListing={handleDeleteListing}
+        onDeleteStories={handleDeleteStories}
         />
       ));    
 

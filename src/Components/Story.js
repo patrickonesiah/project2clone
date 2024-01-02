@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Story({stories}) {
+function Story({stories, onDeleteStories}) {
     const {id, storyTitle, storyDescription, childFirstName, childLastName, authorFirstName, authorLastName, relationship, writtenDate, numberOfLikes, birthOrder, whoHasSeen, storyMainImage} = stories;
 
     function handleDate(){
@@ -9,6 +9,12 @@ function Story({stories}) {
 
     function handleNumberOfLikes(){
         
+    }
+    async function handleDelete(){
+        const storiesResponse = await fetch(`http://localhost:3001/stories/${id}`, {method: "DELETE"})
+        const stories = await storiesResponse.json()
+        onDeleteStories(id)
+        console.log(`Delete =${id}`)
     }
 
     function handleViewStory(){
@@ -28,6 +34,7 @@ function Story({stories}) {
         {writtenDate}
         {numberOfLikes}
         {/* <p>{whoHasSeen}</p> */}
+        <button className="emoji-button delete" onClick={handleDelete}>🗑</button>
         </div>
     </div>
   );
