@@ -51,12 +51,14 @@ code {
 
 .App-story h1{
   text-align: left;
-}
-
-.App-story h1{
-  text-align: left;
   font-size: 1.5em;
 }
+
+.App-story h1:nth-child(2){
+  text-align:center;
+}
+
+
 .App-story h2{
   text-align: left;
   font-size: 1em;
@@ -69,6 +71,11 @@ code {
   height: 3em;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.App-story-img{
+  width:50%;
+  margin-top: 110px;
 }
 
 
@@ -116,3 +123,5 @@ header h1 {
 .App-user-profile-middle button{
   float: left;
 }
+
+

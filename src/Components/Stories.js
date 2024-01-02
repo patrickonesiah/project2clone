@@ -34,7 +34,12 @@ function Stories() {
 
   return (
     <div className="App-stories">
-        <CreateStory/>
+        {/* <CreateStory/> */}
+        <div className="App-story">
+          <img className="App-story-img" src="./images/journal.png" alt="{description}" /> 
+          <h1>Create Story</h1>
+        </div>
+
         {storiesCards}
     </div>
   );
