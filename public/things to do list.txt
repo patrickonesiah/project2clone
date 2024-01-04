@@ -1,5 +1,7 @@
 Tuesday - create buttons, then add and remove story function
-Wednesday - edit story function and edit name
+Wednesday -add and edit story function and edit name/ need to use route to route to createstory page
+Need a navigation bar for create story, homepage, edit page
+
 Thursday - Fix layout
 Friday - Fav button, persist numberOfLikes
 

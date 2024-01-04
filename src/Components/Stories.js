@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Story from './Story'
-import CreateStory from './CreateStory'
+import { Link } from "react-router-dom";
 
 function Stories() {
     const [stories,setStories] = useState([]);
@@ -34,12 +34,10 @@ function Stories() {
 
   return (
     <div className="App-stories">
-        {/* <CreateStory/> */}
-        <div className="App-story">
-          <img className="App-story-img" src="./images/journal.png" alt="{description}" /> 
-          <h1>Create Story</h1>
-        </div>
-
+        <Link to="/CreateStory" className="App-story">
+            <img className="App-story-img" src="./images/journal.png" alt="{description}" /> 
+            Create Stories
+        </Link>
         {storiesCards}
     </div>
   );
