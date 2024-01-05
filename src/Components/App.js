@@ -1,8 +1,5 @@
 import '../App.css';
-import {UserProvider} from './UserProfile';
 import Header from './Header';
-import Stories from './Stories';
-import UserProfile from './UserProfile';
 import CreateStory from './CreateStory';
 import Home from './Home';
 import {Route, Switch } from "react-router-dom";
