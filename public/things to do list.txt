@@ -5,6 +5,19 @@ Need a navigation bar for create story, homepage, edit page
 Thursday - Fix layout
 Friday - Fav button, persist numberOfLikes
 
+Done
+-Add child name input
+-Fix link issue when user clicks on delete //tonight
+
+Not yet
+-Upload image button for CreateAStory page // have to ask Albert how to upload image
+-After submit redirect to All stories page
+-Fix layout issue on story where share by etc etc //tonight
+-Do layout for displaying story //tonight
+-In DisplayStory page, will have an edit button to edit the story etc
+
+https://academyxi.instructure.com/courses/431/assignments/23438?module_item_id=48205
+
 Saturday - login page plus user database
 Sunday - extend project
 

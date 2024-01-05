@@ -14,7 +14,7 @@ code {
 }
 
 
-
+/* App story */
 .App-stories {
   /* background-color: red; */
   margin: 0px 120px;
@@ -26,7 +26,7 @@ code {
 }
 
 .App-story{
-  cursor: pointer;
+  /* cursor: pointer; */
   flex-basis: 29%;
   background-color: white;
   padding: 20px;
@@ -35,12 +35,34 @@ code {
 }
 
 .App-story-top{
-  padding: 0px 0px 40px 0px;
+  padding: 0px 0px 20px 0px;
 }
 
 .App-story-bottom{
   padding: 0px 0px 10px 0px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.deleteButton{
+  grid-column: 6 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.authorName{
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.writtenDate{
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.numberOfLikes{
+  grid-column: 5 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .App-story-image{
@@ -124,4 +146,116 @@ header h1 {
   float: left;
 }
 
+/*Create A Story*/
+.Create-a-story-title{
+  grid-column: 1 / span 1;
+  grid-row: 1 / 1;
+  align-self: center;
+  justify-self: start;
+}
+.Create-a-story-form{
+  font-size: 16px;
+  padding: 10px 20%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%; 
+  grid-template-rows: 20% 20% 150px 20% 80px 20%;
+}
+.Create-a-story-text-area{
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 3;
+}
 
+.Create-a-story-author{
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+}
+.Create-a-story-relationship{
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+  justify-self: start;
+  padding-left: 10px;
+}
+.Create-a-story-label{
+  float: left;
+  font-weight:500;
+  /* margin:5px; */
+}
+
+.Create-a-story-input{
+  float: left;
+  margin-top: 3%;
+  padding: 2%;
+}
+.Create-a-story-childname{
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+}
+.Create-a-story-childNumber{
+  grid-column: 5 / span 1;
+  grid-row: 2 / span 1;
+  align-self: center;
+  justify-self: start;
+  padding-left: 10px;
+}
+
+.Create-a-story-submit{
+  grid-column: 4 / span 1;
+  grid-row: 5 / span 1;
+  align-self: center;
+  background-color: #459375; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+}
+.Create-a-story-submit:hover{
+  background-color: #1ca573; /* Green */
+}
+
+/*header*/
+.header-right{
+  list-style-type: none;
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
+}
+
+.link{
+  float: right;
+  padding: 8px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #1ca573;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.App-story > a {
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* no underline */
+}

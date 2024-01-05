@@ -34,9 +34,9 @@ function Stories() {
 
   return (
     <div className="App-stories">
-        <Link to="/CreateStory" className="App-story">
+        <Link to="/CreateAStory" className="App-story">
             <img className="App-story-img" src="./images/journal.png" alt="{description}" /> 
-            Create Stories
+            Create A Story
         </Link>
         {storiesCards}
     </div>

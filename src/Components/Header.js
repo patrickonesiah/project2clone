@@ -9,13 +9,10 @@ function Header() {
           ☮ Narrative Grove
         </span>
       </h1>
-      <div className="header-right">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/CreateStory">Create Stories</Link></li>
-          <li><Link to="/CreateStory">Invite Family</Link></li>
-        </ul>
-      </div>
+      <ul className="header-right">
+        <li className="link"><Link to="/">All stories</Link></li>
+        <li className="link"><Link to="/CreateAStory">Create</Link></li>
+      </ul>
     </header>
   );
 }
