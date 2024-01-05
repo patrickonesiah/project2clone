@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 
 function CreateAStory() {
+
+  const history = useHistory();
 
   const [storyTitle, setStoryTitle] = useState("My story title");
 
@@ -80,7 +83,10 @@ function CreateAStory() {
     })
       .then((r) => r.json())
       // call the onAddItem prop with the newItem
-      .then((newItem) => console.log(newItem));
+      .then((newItem) => {
+        history.push(`/DisplayStory/${newItem.id}`)
+        console.log(newItem)
+      });
   }
 
   return (

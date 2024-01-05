@@ -121,6 +121,17 @@
           "relationship": "grandfather"
         }
       ]
+    },
+    {
+      "storyTitle": "This is a new story",
+      "storyDescription": "Write your story here...",
+      "childFirstName": "",
+      "childLastName": "",
+      "authorFirstName": "",
+      "authorLastName": "",
+      "relationship": "father",
+      "birthOrder": "first",
+      "id": 6
     }
   ]
 }

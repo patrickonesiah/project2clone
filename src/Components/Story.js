@@ -40,7 +40,6 @@ function Story({ stories, onDeleteStories }) {
                 <span className="numberOfLikes">{numberOfLikes}</span>
                 <button className="deleteButton" onClick={handleDelete}>🗑</button>
             </div>
-
         </div>
     );
 }
