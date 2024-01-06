@@ -9,10 +9,10 @@
       "childLastName": "Dunphy",
       "authorFirstName": "Phil",
       "authorLastName": "Dunphy",
-      "relationship": "father",
+      "relationship": "mother",
       "writtenDate": "2023-02-03T00:00:00.000Z",
       "numberOfLikes": 1,
-      "birthOrder": "first",
+      "birthOrder": "sixth",
       "whoHasSeen": [
         {
           "name": "Jane Doe",
@@ -121,17 +121,6 @@
           "relationship": "grandfather"
         }
       ]
-    },
-    {
-      "storyTitle": "This is a new story",
-      "storyDescription": "Write your story here...",
-      "childFirstName": "",
-      "childLastName": "",
-      "authorFirstName": "",
-      "authorLastName": "",
-      "relationship": "father",
-      "birthOrder": "first",
-      "id": 6
     }
   ]
 }

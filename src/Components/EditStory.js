@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 function EditStory() {
-    const [project, setProject] = useState(null);
+    const [project, setProject] = useState([]);
     const [newStoryTitle, setNewStoryTitle] = useState("")
+    const [newAuthor, setNewAuthor] = useState("")
+    const [newChildName, setNewChildName] = useState("")
+    const [newStory, setNewStory] = useState("")
+    const [newChildOrder, setNewChildOrder] = useState("")
+    const [newRelationship, setNewRelationship] = useState("")
     const { id } = useParams()
     const history = useHistory();
 
@@ -13,23 +17,57 @@ function EditStory() {
             .then(r => r.json())
             .then(data => {
                 setProject(data)
+
                 setNewStoryTitle(data.storyTitle)
+
+                const oldAuthor = data.authorFirstName.concat(' ', data.authorLastName)
+                setNewAuthor(oldAuthor)
+                
+                const oldChildName = data.childFirstName.concat(' ', data.childLastName)
+                setNewChildName(oldChildName)
+
+                setNewStory(data.storyDescription)
+                setNewChildOrder(data.birthOrder)
+                setNewRelationship(data.relationship)
+
+                // const { authorFirstName, authorLastName, birthOrder, childFirstName, childLastName, relationship, storyDescription, storyMainImage, storyTitle } = project
             })
-    }, [id])
+    }, [])
 
-    
     if (!project) return <h2>Loading...</h2>
-    const { storyTitle } = project
-        
 
 
+    // const oldAuthor = authorFirstName.concat(' ', authorLastName)
 
-    function handleStoryTitle(e){
+    function handleStoryTitle(e) {
         setNewStoryTitle(e.target.value)
+    }
+
+    function handleAuthor(e) {
+        setNewAuthor(e.target.value)
+    }
+    
+    function handleChildName(e) {
+        setNewChildName(e.target.value)
+    }
+
+    function handleStory(e) {
+        setNewStory(e.target.value)
+    }
+
+    function handleChildOrder(e) {
+        setNewChildOrder(e.target.value)
+    }
+
+    function handleRelationship(e) {
+        setNewRelationship(e.target.value)
     }
 
     function handleSave(e) {
         e.preventDefault();
+
+        const [authorFirstName, authorLastName] = newAuthor.split(' ')
+        const [childFirstName, childLastName] = newChildName.split(' ')
 
         fetch(`http://localhost:3001/stories/${id}`, {
             method: "PATCH",
@@ -38,6 +76,13 @@ function EditStory() {
             },
             body: JSON.stringify({
                 storyTitle: newStoryTitle,
+                authorFirstName: authorFirstName,
+                authorLastName: authorLastName,
+                childFirstName: childFirstName,
+                childLastName: childLastName,
+                storyDescription: newStory,
+                birthOrder: newChildOrder,
+                relationship: newRelationship,
             }),
         })
             .then(r => r.json())
@@ -49,14 +94,45 @@ function EditStory() {
 
     return (
         <div className="App-create-a-story">
-        <h1>Edit Story</h1>
-        <form className="Create-a-story-form" onSubmit={handleSave}>
-            <div className="Create-a-story-title">
-                <label className="Create-a-story-label" for={storyTitle}>Story title:</label>
-                <input className="Create-a-story-input" name={newStoryTitle} value={newStoryTitle} onChange={handleStoryTitle} />
-            </div>
-            <button className="Create-a-story-submit">Submit</button>
-        </form>
+            <h1>Edit Story</h1>
+            <form className="Create-a-story-form" onSubmit={handleSave}>
+                <div className="Create-a-story-title">
+                    <label className="Create-a-story-label" for={newStoryTitle}>Story title:</label>
+                    <input className="Create-a-story-input" name={newStoryTitle} value={newStoryTitle} onChange={handleStoryTitle} />
+                </div>
+                <div className="Create-a-story-author">
+                    <label className="Create-a-story-label" for={newAuthor}>Author:</label>
+                    <input className="Create-a-story-input" name={newAuthor} value={newAuthor} onChange={handleAuthor} />
+                </div>
+                <div className="Create-a-story-childname">
+                    <label className="Create-a-story-label" for={newChildName}>Child name:</label>
+                    <input className="Create-a-story-input" name={newChildName} value={newChildName} onChange={handleChildName} />
+                </div>
+                <textarea className="Create-a-story-text-area" name={newStory} value={newStory} onChange={handleStory} />
+                <div className="Create-a-story-childNumber">
+                    <label className="Create-a-story-label" for={newChildOrder}>Child no:</label>
+                    <select className="Create-a-story-input" name={newChildOrder} value={newChildOrder} onChange={handleChildOrder}>
+                        <option value="first">First</option>
+                        <option value="second">Second</option>
+                        <option value="third">Third</option>
+                        <option value="fourth">Fourth</option>
+                        <option value="fifth">Fifth</option>
+                        <option value="sixth">Sixth</option>
+                        <option value="seventh">Seventh</option>
+                        <option value="eighth">Eighth</option>
+                        <option value="ninth">Ninth</option>
+                        <option value="tenth">Tenth</option>
+                    </select>
+                </div>
+                <div className="Create-a-story-relationship">
+                    <label className="Create-a-story-label" for={newRelationship}>Relationship:</label>
+                    <select className="Create-a-story-input" name={newRelationship} value={newRelationship} onChange={handleRelationship}>
+                        <option value="father">Father</option>
+                        <option value="mother">Mother</option>
+                    </select>
+                </div>
+                <button className="Create-a-story-submit">Save</button>
+            </form>
         </div>
     );
 }

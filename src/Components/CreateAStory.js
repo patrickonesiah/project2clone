@@ -11,13 +11,15 @@ function CreateAStory() {
     setStoryTitle(event.target.value)
   }
 
+  const [childDisplayName, setDisplayName] = useState("Child name");
   const [childFirstName, setChildFirstName] = useState("");
   const [childLastName, setChildLastName] = useState("");
 
   const handleChildName = (event) => {
-    const childname = event.target.value.split(' ')
-    setChildFirstName(childname[0])
-    setChildLastName(childname[1])
+    const [childFirstName, childLastName] = event.target.value.split(' ')
+    setChildFirstName(childFirstName)
+    setChildLastName(childLastName)
+    setDisplayName(event.target.value)
   }
 
   // const [writtenDate, setstoryTitle] = useState("");
@@ -95,15 +97,15 @@ function CreateAStory() {
       <form className="Create-a-story-form" onSubmit={handleSubmit}>
         <div className="Create-a-story-title">
           <label className="Create-a-story-label" for={storyTitle}>Story title:</label>
-          <input className="Create-a-story-input" name={storyTitle} onChange={handleStoryTitle} />
+          <input className="Create-a-story-input" name={storyTitle} value={storyTitle} onChange={handleStoryTitle} />
         </div>
         <div className="Create-a-story-author">
-          <label className="Create-a-story-label">Author:</label>
-          <input className="Create-a-story-input" name="author" onChange={handleAuthorName} />
+          <label className="Create-a-story-label" >Author:</label>
+          <input className="Create-a-story-input" name="author" value="Author name" onChange={handleAuthorName} />
         </div>
         <div className="Create-a-story-childname">
           <label className="Create-a-story-label">Child name:</label>
-          <input className="Create-a-story-input" name="childname" onChange={handleChildName} />
+          <input className="Create-a-story-input" name={childDisplayName} value={childDisplayName} onChange={handleChildName} />
         </div>
         <textarea className="Create-a-story-text-area" value={story} onChange={handleStory} />
         <div className="Create-a-story-childNumber">
