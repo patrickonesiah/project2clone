@@ -87,7 +87,7 @@ code {
   color:rgb(167, 167, 167);
 }
 
-.App-story p {
+.App-story-top > p {
   text-align: left;
   line-height: 1.5em;
   height: 3em;
@@ -127,7 +127,9 @@ header h1 {
   padding: 40px 120px;
   background-color: #ffffff;
   display: grid;
-  grid-template-columns: 10% 80% 10%
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 50% 50%;
+  justify-items: start;
 }
 
 .App-user-profile-img{
@@ -144,6 +146,33 @@ header h1 {
 }
 .App-user-profile-middle button{
   float: left;
+}
+
+.App-user-name{
+  display: block;
+  font-size: 2em;
+  margin-top: 2%;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  float:left;
+	padding: 0;
+	background: none;
+	/* border: none; */
+	border-radius: 0;
+	outline: none;
+}
+
+.App-user-editButton{
+
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.App-user-profile-left{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
 }
 
 /*Create A Story*/

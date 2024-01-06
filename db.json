@@ -9,7 +9,7 @@
       "childLastName": "Dunphy",
       "authorFirstName": "Phil",
       "authorLastName": "Dunphy",
-      "relationship": "mother",
+      "relationship": "father",
       "writtenDate": "2023-02-03T00:00:00.000Z",
       "numberOfLikes": 1,
       "birthOrder": "sixth",
@@ -33,7 +33,7 @@
     {
       "id": 2,
       "storyTitle": "Sour strawberries",
-      "storyDescription": "Alex ate a strawberry and her face turned distorted because the strawberry was sour.",
+      "storyDescription": "Alex ate a strawberry and her face turned distorted because the strawberry was sour.Alex ate a strawberry and her face turned distorted because the strawberry was sour.Alex ate a strawberry and her face turned distorted because the strawberry was sour.Alex ate a strawberry and her face turned distorted because the strawberry was sour.Alex ate a strawberry and her face turned distorted because the strawberry was sour.Alex ate a strawberry and her face turned distorted because the strawberry was sour.Alex ate a strawberry and her face turned distorted because the strawberry was sour.",
       "childFirstName": "Alex",
       "childLastName": "Dunphy",
       "authorFirstName": "Phil",
