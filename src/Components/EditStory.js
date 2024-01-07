@@ -22,7 +22,7 @@ function EditStory() {
 
                 const oldAuthor = data.authorFirstName.concat(' ', data.authorLastName)
                 setNewAuthor(oldAuthor)
-                
+
                 const oldChildName = data.childFirstName.concat(' ', data.childLastName)
                 setNewChildName(oldChildName)
 
@@ -46,7 +46,7 @@ function EditStory() {
     function handleAuthor(e) {
         setNewAuthor(e.target.value)
     }
-    
+
     function handleChildName(e) {
         setNewChildName(e.target.value)
     }

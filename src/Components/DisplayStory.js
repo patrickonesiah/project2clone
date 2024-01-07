@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"
-import { useHistory } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
+import Like from './Like';
+
 function DisplayStory() {
     const [project, setProject] = useState(null);
     const { id } = useParams()
@@ -19,24 +20,22 @@ function DisplayStory() {
     }
 
     return (
-        <div className="App-stories">
-            <div className="App-story">
-                <h1>{storyTitle}</h1>
+        <div className="Display-story-container">
+            <div className="Display-story">
 
                 <div className="Display-story-top">
                     <h2>{childFirstName} {childLastName} - {birthOrder} child</h2>
-                    <img className="App-story-image" src={storyMainImage} alt="{description}" />
-                    <p>{storyDescription}</p>
+                    <h1>{storyTitle}</h1>
+                    <img className="Display-story-image" src={storyMainImage} alt="{description}" />
+                    <p className="Display-story-paragraph">{storyDescription}</p>
                 </div>
 
-                <div className="App-story-bottom">
+                <div className="Display-story-bottom">
                     <span className="authorName">Shared by {authorFirstName} {authorLastName}</span>
                     <span className="writtenDate">{writtenDate}</span>
-                    <span className="numberOfLikes">{numberOfLikes}</span>
-                    {/* <button className="deleteButton" onClick={handleDelete}>🗑</button> */}
+                    <Like id={id} numberOfLikes={numberOfLikes}/>
+                    <img className="editButton" onClick={handleNewStoryTitle} src="../images/pen.png" alt="Edit" width="30" />
                 </div>
-
-                <button onClick={handleNewStoryTitle}>Edit</button>
             </div>
         </div>
     );

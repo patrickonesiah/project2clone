@@ -43,26 +43,39 @@ code {
   display: grid;
   grid-template-columns: 16% 16% 16% 16% 16% 16%;
   grid-template-rows: 33% 33% 33%;
+  justify-items: center;
+  align-items: center;
 }
 
 .deleteButton{
   grid-column: 6 / span 1;
   grid-row: 2 / span 1;
+  cursor: pointer;
 }
 
-.authorName{
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 2;
+.App-story-bottom > .authorName{
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  justify-self: left;
+  font-weight: 600;
 }
 
 .writtenDate{
-  grid-column: 3 / span 2;
-  grid-row: 2 / span 2;
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 1;
+  justify-self: left;
 }
 
 .numberOfLikes{
   grid-column: 5 / span 1;
   grid-row: 2 / span 1;
+  padding-left: 70%;
+}
+
+.numberOfLikes-image{
+  grid-column: 5 / span 1;
+  grid-row: 2 / span 1;
+  cursor: pointer;
 }
 
 .App-story-image{
@@ -99,6 +112,76 @@ code {
   width:50%;
   margin-top: 110px;
 }
+
+/* Display story */
+.Display-story{
+  background: White;
+  padding: 20px 0;
+}
+.Display-story-container{
+  /* background: white; */
+  padding: 20px 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.Display-story-image{
+  width: 90%;
+}
+
+.Display-story-paragraph{
+  padding: 0 5%;
+  text-align: left;
+}
+
+.Display-story-bottom{
+  padding: 0px 5% 10px 5%;
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16%;
+  grid-template-rows: 33% 33% 33%;
+  justify-items: center;
+  align-items: center;
+}
+
+.Display-story-bottom > .authorName{
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  justify-self: left;
+  font-weight: 600;
+}
+
+.Display-story-top > h2 {
+  padding: 0 5%;
+  text-align: left;
+}
+.Display-story-top > h1 {
+  padding: 0 5%;
+  text-align: left;
+}
+
+.editButton{
+  grid-column: 6 / span 1;
+  grid-row: 2 / span 1;
+  cursor: pointer;
+}
+
+/* .writtenDate{
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 1;
+  justify-self: left;
+}
+
+.numberOfLikes{
+  grid-column: 5 / span 1;
+  grid-row: 2 / span 1;
+  padding-left: 70%;
+}
+
+.numberOfLikes-image{
+  grid-column: 5 / span 1;
+  grid-row: 2 / span 1;
+  cursor: pointer;
+} */
 
 
 /* Header */
