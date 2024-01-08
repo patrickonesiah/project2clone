@@ -14,10 +14,8 @@ code {
     monospace;
 }
 
-
 /* App story */
 .App-stories {
-  /* background-color: red; */
   margin: 0px 120px;
   display: flex;
   justify-content: center;
@@ -27,8 +25,7 @@ code {
   align-content: stretch;
 }
 
-.App-story{
-  /* cursor: pointer; */
+.App-story {
   flex-basis: 29%;
   background-color: white;
   padding: 20px;
@@ -39,11 +36,9 @@ code {
   gap: 20px;
 }
 
-.App-story-top{
+.App-story-top {}
 
-}
-
-.App-story-bottom{
+.App-story-bottom {
   display: grid;
   grid-template-columns: 16% 16% 16% 16% 16% 16%;
   grid-template-rows: 33% 33% 33%;
@@ -52,60 +47,59 @@ code {
   margin-top: auto;
 }
 
-.deleteButton{
+.deleteButton {
   grid-column: 6 / span 1;
   grid-row: 2 / span 1;
   cursor: pointer;
 }
 
-.App-story-bottom > .authorName{
+.App-story-bottom>.authorName {
   grid-column: 1 / span 3;
   grid-row: 1 / span 2;
   justify-self: left;
   font-weight: 600;
 }
 
-.writtenDate{
+.writtenDate {
   grid-column: 1 / span 3;
   grid-row: 3 / span 1;
   justify-self: left;
 }
 
-.numberOfLikes{
+.numberOfLikes {
   grid-column: 5 / span 1;
   grid-row: 2 / span 1;
   padding-left: 70%;
 }
 
-.numberOfLikes-image{
+.numberOfLikes-image {
   grid-column: 5 / span 1;
   grid-row: 2 / span 1;
   cursor: pointer;
 }
 
-.App-story-image{
-  width:100%;
+.App-story-image {
+  width: 100%;
   height: 80%;
   border-radius: 10px;
 }
 
-.App-story h1{
+.App-story h1 {
   text-align: left;
   font-size: 1.5em;
 }
 
-.App-story h1:nth-child(2){
-  text-align:center;
+.App-story h1:nth-child(2) {
+  text-align: center;
 }
 
-
-.App-story h2{
+.App-story h2 {
   text-align: left;
   font-size: 1em;
-  color:rgb(167, 167, 167);
+  color: rgb(167, 167, 167);
 }
 
-.App-story-top > p {
+.App-story-top>p {
   text-align: left;
   line-height: 1.5em;
   height: 3em;
@@ -113,39 +107,41 @@ code {
   text-overflow: ellipsis;
 }
 
-.App-story-img{
+.App-story-img {
   margin-top: 30%;
   margin-left: 6%;
-  width:35%;
+  width: 35%;
 }
-.App-story-img-cta{
+
+.App-story-img-cta {
   margin-top: 5%;
   font-size: 1.1em;
   font-weight: 500;
 }
 
 /* Display story */
-.Display-story{
+.Display-story {
   background: White;
   padding: 20px 0;
 }
-.Display-story-container{
+
+.Display-story-container {
   /* background: white; */
   padding: 20px 35%;
   display: flex;
   justify-content: center;
 }
 
-.Display-story-image{
+.Display-story-image {
   width: 90%;
 }
 
-.Display-story-paragraph{
+.Display-story-paragraph {
   padding: 0 5%;
   text-align: left;
 }
 
-.Display-story-bottom{
+.Display-story-bottom {
   padding: 0px 5% 10px 5%;
   display: grid;
   grid-template-columns: 16% 16% 16% 16% 16% 16%;
@@ -154,69 +150,54 @@ code {
   align-items: center;
 }
 
-.Display-story-bottom > .authorName{
+.Display-story-bottom>.authorName {
   grid-column: 1 / span 3;
   grid-row: 1 / span 2;
   justify-self: left;
   font-weight: 600;
 }
 
-.Display-story-top > h2 {
-  padding: 0 5%;
-  text-align: left;
-}
-.Display-story-top > h1 {
+.Display-story-top>h2 {
   padding: 0 5%;
   text-align: left;
 }
 
-.editButton{
+.Display-story-top>h1 {
+  padding: 0 5%;
+  text-align: left;
+}
+
+.editButton {
   grid-column: 6 / span 1;
   grid-row: 2 / span 1;
   cursor: pointer;
 }
 
-/* .writtenDate{
-  grid-column: 1 / span 3;
-  grid-row: 3 / span 1;
-  justify-self: left;
-}
-
-.numberOfLikes{
-  grid-column: 5 / span 1;
-  grid-row: 2 / span 1;
-  padding-left: 70%;
-}
-
-.numberOfLikes-image{
-  grid-column: 5 / span 1;
-  grid-row: 2 / span 1;
-  cursor: pointer;
-} */
-
-
 /* Header */
 header {
   background-color: #3a843a;
-  padding:40px 120px;
+  padding: 40px 120px;
   box-shadow: 0px 1px 20px;
   display: grid;
   grid-template-columns: 35% 65%
 }
+
 header h1 {
   color: rgb(255, 255, 255);
-  margin:0px;
+  margin: 0px;
 }
-.header-left{
+
+.header-left {
   text-align: left;
 }
-.header-right{
+
+.header-right {
   text-align: right;
   cursor: pointer;
 }
 
 /* User Profile */
-.App-user-profile{
+.App-user-profile {
   padding-top: 40px;
   padding: 40px 120px;
   background-color: #ffffff;
@@ -226,23 +207,25 @@ header h1 {
   justify-items: start;
 }
 
-.App-user-profile-img{
-  width:65%;
+.App-user-profile-img {
+  width: 65%;
 }
 
-.App-user-profile-middle button{
+.App-user-profile-middle button {
   font-size: 1em;
 }
-.App-user-profile-middle h2{
+
+.App-user-profile-middle h2 {
   font-size: 2em;
   margin: 2% 0px 0px 0px;
   text-align: left;
 }
-.App-user-profile-middle button{
+
+.App-user-profile-middle button {
   float: left;
 }
 
-.App-user-name{
+.App-user-name {
   display: block;
   font-size: 2em;
   margin-top: 2%;
@@ -250,40 +233,41 @@ header h1 {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
-  float:left;
-	padding: 0;
-	background: none;
-	/* border: none; */
-	border-radius: 0;
-	outline: none;
+  float: left;
+  padding: 0;
+  background: none;
+  /* border: none; */
+  border-radius: 0;
+  outline: none;
 }
 
-.App-user-editButton{
-
+.App-user-editButton {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
 
-.App-user-profile-left{
+.App-user-profile-left {
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
 }
 
 /*Create A Story*/
-.Create-a-story-title{
+.Create-a-story-title {
   grid-column: 1 / span 1;
   grid-row: 1 / 1;
   align-self: center;
   justify-self: start;
 }
-.Create-a-story-form{
+
+.Create-a-story-form {
   font-size: 16px;
   padding: 10px 20%;
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%; 
+  grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 150px 20% 80px 20%;
 }
-.Create-a-story-text-area{
+
+.Create-a-story-text-area {
   width: 100%;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -296,35 +280,38 @@ header h1 {
   white-space: pre-wrap;
 }
 
-.Create-a-story-author{
+.Create-a-story-author {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
   align-self: center;
 }
-.Create-a-story-relationship{
+
+.Create-a-story-relationship {
   grid-column: 5 / span 1;
   grid-row: 1 / span 1;
   align-self: center;
   justify-self: start;
   padding-left: 10px;
 }
-.Create-a-story-label{
+
+.Create-a-story-label {
   float: left;
-  font-weight:500;
-  /* margin:5px; */
+  font-weight: 500;
 }
 
-.Create-a-story-input{
+.Create-a-story-input {
   float: left;
   margin-top: 3%;
   padding: 2%;
 }
-.Create-a-story-childname{
+
+.Create-a-story-childname {
   grid-column: 3 / span 1;
   grid-row: 1 / span 1;
   align-self: center;
 }
-.Create-a-story-childNumber{
+
+.Create-a-story-childNumber {
   grid-column: 5 / span 1;
   grid-row: 2 / span 1;
   align-self: center;
@@ -332,32 +319,33 @@ header h1 {
   padding-left: 10px;
 }
 
-.Create-a-story-submit{
+.Create-a-story-submit {
   grid-column: 4 / span 1;
   grid-row: 5 / span 1;
   align-self: center;
-  background-color: #459375; /* Green */
+  background-color: #459375;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px; 
+  font-size: 16px;
 }
-.Create-a-story-submit:hover{
-  background-color: #1ca573; /* Green */
+
+.Create-a-story-submit:hover {
+  background-color: #1ca573;
 }
 
 /*header*/
-.header-right{
+.header-right {
   list-style-type: none;
   font-size: 1.3em;
   margin: 0;
   padding: 0;
 }
 
-.link{
+.link {
   float: right;
   padding: 8px;
 }
@@ -370,7 +358,6 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #1ca573;
 }
@@ -381,13 +368,12 @@ li a:hover {
 
 .App-stories a {
   color: rgb(0, 0, 0);
-  text-decoration: none; /* no underline */
+  text-decoration: none;
 }
 
-.App-story-create-container{
+.App-story-create-container {
   display: flex;
   align-items: center;
   align-content: center;
   flex-direction: column;
 }
-
