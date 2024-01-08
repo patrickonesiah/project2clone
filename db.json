@@ -3,32 +3,16 @@
     {
       "id": 1,
       "storyTitle": "My first steps",
-      "storyDescription": "Today Alex was outside playing in the garden when she a butterfly. She decided to reach for the butterfly. To my amazement, she was in a crawling position and decided to stand up to make an attempt to reach for the butterfly. As she was about to reach for the butterfly, the butterfly flew to another area. Alex attempted to chase after the butterfly by making her first step.",
-      "storyMainImage": "https://cdn.firstcry.com/education/2022/06/22135052/1060654517.jpg",
+      "storyDescription": "Today, Alex was playing in the garden when she spotted a butterfly. In an attempt to reach it, she transitioned from a crawling position to standing up. To my amazement, just as she was about to reach for the butterfly, it flew to another area. Undeterred, Alex took her first steps, attempting to chase after the elusive butterfly.",
+      "storyMainImage": "https://lovevery.com/community/blog/wp-content/uploads/2020/11/Walking-and-Other-Milestones_27x16.jpg",
       "childFirstName": "Alex",
       "childLastName": "Dunphy",
       "authorFirstName": "Phil",
       "authorLastName": "Dunphy",
       "relationship": "father",
-      "writtenDate": "2023-02-03T00:00:00.000Z",
-      "numberOfLikes": 9,
-      "birthOrder": "first",
-      "whoHasSeen": [
-        {
-          "name": "Jane Doe",
-          "phone": "888-555-1212",
-          "email": "Jane_Dunphy@gmail.com",
-          "hasLiked": true,
-          "relationship": "mother"
-        },
-        {
-          "name": "Justin Doe",
-          "phone": "877-123-1212",
-          "email": "Justin_Dunphy@gmail.com",
-          "hasLiked": false,
-          "relationship": "grandfather"
-        }
-      ]
+      "writtenDate": "27 Dec 2023",
+      "numberOfLikes": 12,
+      "birthOrder": "first"
     },
     {
       "id": 2,
@@ -39,88 +23,108 @@
       "authorFirstName": "Phil",
       "authorLastName": "Dunphy",
       "relationship": "father",
-      "writtenDate": "2023-02-05T00:00:00.000Z",
-      "numberOfLikes": 7,
+      "writtenDate": "28 Dec 2024",
+      "numberOfLikes": 29,
       "birthOrder": "first",
-      "storyMainImage": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*9BXTcmYQjFzgE-JYVApFwg.jpeg",
-      "whoHasSeen": [
-        {
-          "name": "Justin Doe",
-          "phone": "877-123-1212",
-          "email": "Justin_Dunphy@gmail.com",
-          "hasLiked": false,
-          "relationship": "grandfather"
-        }
-      ]
+      "storyMainImage": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*9BXTcmYQjFzgE-JYVApFwg.jpeg"
     },
     {
       "id": 3,
       "storyTitle": "Unexpected allergy reaction",
-      "storyDescription": "His lips was swollen after eating a kung pao chicken with cashew nuts. I was so worried as he was wheezing and breathing fast. I brought him to the nearest hospital.",
+      "storyDescription": "On a sunny afternoon, young Luke excitedly sampled a new treat, unaware of the hidden danger within. Moments later, an unexpected allergic reaction unfolded, casting a shadow over his joyful day. Panicked, his family rushed him to the hospital, where medical teams battled to stabilize him. Despite their efforts, the tragedy struck, leaving behind a grieving family and a community in shock, forever altered by the sudden loss of a beloved child named Luke.",
       "childFirstName": "Luke",
       "childLastName": "Dunphy",
       "authorFirstName": "Kate",
       "authorLastName": "Dunphy",
       "relationship": "mother",
-      "writtenDate": "2023-04-08T00:00:00.000Z",
+      "writtenDate": "8 Jan 2024",
       "numberOfLikes": 12,
       "birthOrder": "second",
-      "storyMainImage": "https://images.everydayhealth.com/images/skin-beauty/hives/treating-hives-in-kids-722x406.jpg",
-      "whoHasSeen": [
-        {
-          "name": "Justin Doe",
-          "phone": "877-123-1212",
-          "email": "Justin_Dunphy@gmail.com",
-          "hasLiked": true,
-          "relationship": "grandfather"
-        }
-      ]
+      "storyMainImage": "https://images.everydayhealth.com/images/skin-beauty/hives/treating-hives-in-kids-722x406.jpg"
     },
     {
       "id": 4,
       "storyTitle": "Grandma and grandpa came to visit me",
-      "storyDescription": "Had great time getting to see grandpa for the first time. He made silly actions and I copied him. Grandma was very nice to me",
+      "storyDescription": "When Luke's grandparents arrived at his home, the air was filled with warmth and nostalgia. Their laughter and stories created a bridge between generations, weaving cherished memories into the fabric of the present. Together, they embarked on a journey of shared experiences, with Luke reveling in the wisdom and love that his grandparents generously bestowed upon him.",
       "childFirstName": "Luke",
       "childLastName": "Dunphy",
       "authorFirstName": "Kate",
       "authorLastName": "Dunphy",
       "relationship": "mother",
-      "writtenDate": "2023-04-08T00:00:00.000Z",
+      "writtenDate": "8 Jan 2024",
       "numberOfLikes": 9,
       "birthOrder": "second",
-      "storyMainImage": "https://chicagoparent.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2021/03/grandparents-visiting-kids-tips-cdc-photo-credit-istock-rgstudio.jpg",
-      "whoHasSeen": [
-        {
-          "name": "Justin Doe",
-          "phone": "877-123-1212",
-          "email": "Justin_Dunphy@gmail.com",
-          "hasLiked": true,
-          "relationship": "grandfather"
-        }
-      ]
+      "storyMainImage": "https://chicagoparent.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2021/03/grandparents-visiting-kids-tips-cdc-photo-credit-istock-rgstudio.jpg"
     },
     {
       "id": 5,
       "storyTitle": "Animal Sounds",
-      "storyDescription": "Learned about animls from the zoo. Cow says \"Moo!\"",
+      "storyDescription": "In the vibrant world of Luke's childhood, curiosity led him to a delightful exploration of animal sounds. Armed with colorful picture books and animated toys, he eagerly immersed himself in the enchanting symphony of nature. Giggles of joy echoed through his room as he mimicked the playful barks of dogs, the gentle meows of cats, and the cheerful chirps of birds. With wide-eyed wonder, Luke discovered the rich tapestry of sounds that adorned the animal kingdom, his innocent laughter harmonizing with each delightful imitation. This whimsical journey not only filled his days with joy but also laid the foundation for a deeper connection with the fascinating world of creatures around him.",
       "childFirstName": "Luke",
       "childLastName": "Dunphy",
       "authorFirstName": "Kate",
       "authorLastName": "Dunphy",
       "relationship": "mother",
-      "writtenDate": "2023-04-08T00:00:00.000Z",
+      "writtenDate": "8 Jan 2024",
       "numberOfLikes": 7,
       "birthOrder": "second",
-      "storyMainImage": "https://nurturey.com/blog/wp-content/uploads/2017/07/zoo_sheep.jpg",
-      "whoHasSeen": [
-        {
-          "name": "Justin Doe",
-          "phone": "877-123-1212",
-          "email": "Justin_Dunphy@gmail.com",
-          "hasLiked": true,
-          "relationship": "grandfather"
-        }
-      ]
+      "storyMainImage": "https://nurturey.com/blog/wp-content/uploads/2017/07/zoo_sheep.jpg"
+    },
+    {
+      "storyTitle": " A Tale of Childhood Growth and Discovery",
+      "storyDescription": "Once upon a time in a small village, a curious child named Luke embarked on the journey of self-discovery. As she played with other children, her social skills blossomed, and she learned the importance of cooperation and sharing. Through exploring her surroundings, Luke developed cognitive abilities, solving puzzles and understanding cause and effect. As challenges arose, she discovered resilience and problem-solving, nurturing her emotional intelligence. Guided by supportive parents and mentors, Luke's journey through childhood was a tapestry of growth, shaping her into a well-rounded individual ready to face the adventures of life.",
+      "childFirstName": "Luke",
+      "childLastName": "Dunphy",
+      "authorFirstName": "Phil",
+      "authorLastName": "Dunphy",
+      "relationship": "father",
+      "storyMainImage": "https://www.careforkids.com.au/articles/assets/2020-05-18-11-00-01-scribble-949841606_ARTICLE.jpg",
+      "writtenDate": "8 Jan 2024",
+      "numberOfLikes": 0,
+      "birthOrder": "first",
+      "id": 6
+    },
+    {
+      "storyTitle": "Reading Adventures",
+      "storyDescription": "In our snug little home, I've been witnessing my daughter, Alex, embark on enchanting journeys within the pages of her books. Every evening, we snuggle up with her cherished stories, and her eyes dance with excitement at every twist in the plot. From her first picture book to the adventurous chapter novels, I've observed her creativity unfurl like a blossom in bloom.\n\nAs she laughs at whimsical tales and gets lost in thrilling adventures, a warmth fills my heart. Our reading corner has become a sanctuary where stories come alive, and each book is a new companion for Alex. It's more than just words on pages; it's about the shared joy and connection, turning our home into a haven where imagination knows no limits.",
+      "childFirstName": "Alex",
+      "childLastName": "Dunphy",
+      "authorFirstName": "",
+      "authorLastName": "Kate",
+      "relationship": "mother",
+      "storyMainImage": "https://pjlibrary.org.uk/getmedia/f61d8b4a-2c6d-4fa0-941f-9975e79ac6e9/toddler-looking-through-books.jpg",
+      "writtenDate": "9 Jan 2024",
+      "numberOfLikes": 0,
+      "birthOrder": "second",
+      "id": 7
+    },
+    {
+      "storyTitle": "First kick",
+      "storyDescription": "In our cheerful Werribee park, my six-year-old, Luke, just nailed his first soccer kick. The excitement was real! The ball soared, cheers erupted, and suddenly the whole gang was high-fiving him. It was a magic moment, you know? Luke's love for soccer? Well, that started right there, making our little town even more awesome.",
+      "childFirstName": "Luke",
+      "childLastName": "Dunphy",
+      "authorFirstName": "Phil",
+      "authorLastName": "Dunphy",
+      "relationship": "father",
+      "storyMainImage": "https://raisingchildren.net.au/__data/assets/image/0027/51597/activities-for-younger-kids_narrow.jpg",
+      "writtenDate": "9 Jan 2024",
+      "numberOfLikes": 0,
+      "birthOrder": "first",
+      "id": 8
+    },
+    {
+      "storyTitle": "My story title",
+      "storyDescription": "Write your story here...",
+      "childFirstName": "Child",
+      "childLastName": "name",
+      "authorFirstName": "Phil",
+      "authorLastName": "Dunphy",
+      "relationship": "father",
+      "storyMainImage": "https://www.pallenz.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png",
+      "writtenDate": "9 Jan 2024",
+      "numberOfLikes": 0,
+      "birthOrder": "first",
+      "id": 9
     }
   ]
 }

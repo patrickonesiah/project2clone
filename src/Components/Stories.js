@@ -35,8 +35,10 @@ function Stories() {
   return (
     <div className="App-stories">
         <Link to="/CreateAStory" className="App-story">
-            <img className="App-story-img" src="./images/journal.png" alt="{description}" /> 
-            Create A Story
+        <div className="App-story-create-container">
+          <img className="App-story-img" src="./images/journal.png" alt="Journal icon" />
+          <div className="App-story-img-cta">Create A Story</div>
+        </div>
         </Link>
         {storiesCards}
     </div>

@@ -9,6 +9,7 @@ function EditStory() {
     const [newStory, setNewStory] = useState("")
     const [newChildOrder, setNewChildOrder] = useState("")
     const [newRelationship, setNewRelationship] = useState("")
+    const [newMainImg, setNewMainImg] = useState("")
     const { id } = useParams()
     const history = useHistory();
 
@@ -29,7 +30,7 @@ function EditStory() {
                 setNewStory(data.storyDescription)
                 setNewChildOrder(data.birthOrder)
                 setNewRelationship(data.relationship)
-
+                setNewMainImg(data.storyMainImage)
                 // const { authorFirstName, authorLastName, birthOrder, childFirstName, childLastName, relationship, storyDescription, storyMainImage, storyTitle } = project
             })
     }, [])
@@ -62,6 +63,9 @@ function EditStory() {
     function handleRelationship(e) {
         setNewRelationship(e.target.value)
     }
+    function handleNewImg(e) {
+        setNewMainImg(e.target.value)
+    }
 
     function handleSave(e) {
         e.preventDefault();
@@ -83,6 +87,7 @@ function EditStory() {
                 storyDescription: newStory,
                 birthOrder: newChildOrder,
                 relationship: newRelationship,
+                storyMainImage: newMainImg,
             }),
         })
             .then(r => r.json())
@@ -107,6 +112,12 @@ function EditStory() {
                 <div className="Create-a-story-childname">
                     <label className="Create-a-story-label" for={newChildName}>Child name:</label>
                     <input className="Create-a-story-input" name={newChildName} value={newChildName} onChange={handleChildName} />
+                </div>
+                <div className="Create-a-story-mainImage">
+                    <label className="Create-a-story-label">Story main image:</label>
+                    {/* <input className="Create-a-story-input" name={mainImg} value={mainImg} onChange={handleMainImg} /> */}
+                    <input className="Create-a-story-input" name={newMainImg} value={newMainImg} onChange={handleNewImg} />
+                    {/* Need to fix the naming of variables for input and put in a handler */}
                 </div>
                 <textarea className="Create-a-story-text-area" name={newStory} value={newStory} onChange={handleStory} />
                 <div className="Create-a-story-childNumber">

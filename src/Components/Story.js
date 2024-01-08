@@ -29,7 +29,7 @@ function Story({ stories, onDeleteStories }) {
             <Link to={`/DisplayStory/${id}`}>
                 <div className="App-story-top" onClick={handleID}>
                     <h2>{childFirstName} {childLastName} - {birthOrder} child</h2>
-                    <img className="App-story-image" src={storyMainImage} alt="{description}" />
+                    <img className="App-story-image" src={storyMainImage} alt="Story image" />
                     <h1>{storyTitle}</h1>
                     <p>{storyDescription}</p>
                 </div>
@@ -37,8 +37,6 @@ function Story({ stories, onDeleteStories }) {
             <div className="App-story-bottom">
                 <span className="authorName">Shared by {authorFirstName} {authorLastName}</span>
                 <span className="writtenDate">{writtenDate}</span>
-                {/* <span className="numberOfLikes">{newNumberOfLikes}</span> */}
-                {/* <img className="numberOfLikes-image" onClick={handleNumberOfLikes} src="./images/heart.png" alt="Like" width="30" /> */}
                 <Like id={id} numberOfLikes={numberOfLikes}/>
                 <img className="deleteButton" onClick={handleDelete} src="./images/bin.png" alt="Delete" width="30" />
             </div>

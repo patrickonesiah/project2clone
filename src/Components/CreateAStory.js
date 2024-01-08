@@ -3,6 +3,15 @@ import { useHistory } from "react-router-dom";
 
 function CreateAStory() {
 
+  const date = new Date();
+  
+  let day = date.getDate();
+  // let month = date.getMonth() + 1;
+  const month = date.toLocaleString('default', { month: 'long' }).substring(0, 3);
+  let year = date.getFullYear();
+  // This arrangement can be altered based on how we want the date's format to appear.
+  let currentDate = `${day} ${month} ${year}`;
+
   const history = useHistory();
 
   const [storyTitle, setStoryTitle] = useState("My story title");
@@ -12,8 +21,8 @@ function CreateAStory() {
   }
 
   const [childDisplayName, setDisplayName] = useState("Child name");
-  const [childFirstName, setChildFirstName] = useState("");
-  const [childLastName, setChildLastName] = useState("");
+  const [childFirstName, setChildFirstName] = useState("Child");
+  const [childLastName, setChildLastName] = useState("name");
 
   const handleChildName = (event) => {
     const [childFirstName, childLastName] = event.target.value.split(' ')
@@ -24,22 +33,28 @@ function CreateAStory() {
 
   // const [writtenDate, setstoryTitle] = useState("");
   // const [numberOfLikes, setstoryTitle] = useState("");
-
-  const [authorFirstName, setAuthorFirstName] = useState("");
-  const [authorLastName, setAuthorLastName] = useState("");
+  const [authorDisplayName, setAuthorDisplayName] = useState("Phil Dunphy");
+  const [authorFirstName, setAuthorFirstName] = useState("Phil");
+  const [authorLastName, setAuthorLastName] = useState("Dunphy");
 
   const handleAuthorName = (event) => {
-    const fullname = event.target.value.split(' ')
-    setAuthorFirstName(fullname[0])
-    setAuthorLastName(fullname[1])
+    const [authorFirstName, authorLastName] = event.target.value.split(' ')
+    setAuthorFirstName(authorFirstName)
+    setAuthorLastName(authorLastName)
+    setAuthorDisplayName(event.target.value)
   }
 
   const [childOrder, setChildOrder] = useState("first");
-
+  
   const handleChildOrder = (event) => {
     setChildOrder(event.target.value)
   }
+  const [mainImg, setMainImg] = useState("https://www.pallenz.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png");
 
+  function handleMainImg(e){
+    setMainImg(e.target.value)
+  }
+  
   const [story, setStory] = useState(
     "Write your story here..."
   );
@@ -70,9 +85,9 @@ function CreateAStory() {
       authorFirstName: authorFirstName,
       authorLastName: authorLastName,
       relationship: relationship,
-      // storyMainImage: selectedImage,
-      // writtenDate: "2023-04-08T00:00:00.000Z",
-      // numberOfLikes: 1,
+      storyMainImage: mainImg,
+      writtenDate: currentDate,
+      numberOfLikes: 0,
       birthOrder: childOrder,
     };
 
@@ -101,11 +116,15 @@ function CreateAStory() {
         </div>
         <div className="Create-a-story-author">
           <label className="Create-a-story-label" >Author:</label>
-          <input className="Create-a-story-input" name="author" value="Author name" onChange={handleAuthorName} />
+          <input className="Create-a-story-input" name={authorDisplayName} value={authorDisplayName} onChange={handleAuthorName} />
         </div>
         <div className="Create-a-story-childname">
           <label className="Create-a-story-label">Child name:</label>
           <input className="Create-a-story-input" name={childDisplayName} value={childDisplayName} onChange={handleChildName} />
+        </div>
+        <div className="Create-a-story-mainImage">
+          <label className="Create-a-story-label">Story main image:</label>
+          <input className="Create-a-story-input" name={mainImg} value={mainImg} onChange={handleMainImg} />
         </div>
         <textarea className="Create-a-story-text-area" value={story} onChange={handleStory} />
         <div className="Create-a-story-childNumber">

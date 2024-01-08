@@ -6,7 +6,7 @@ function Header() {
     <header>
       <h1 className="header-left">
         <span className="logo" role="img">
-          ☮ Narrative Grove
+        Ω Narrative Grove
         </span>
       </h1>
       <ul className="header-right">
