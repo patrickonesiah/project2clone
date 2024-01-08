@@ -3,23 +3,25 @@ import { useHistory } from "react-router-dom";
 
 function CreateAStory() {
 
+  /* Initialize date and format to 1 Jan 2024*/
   const date = new Date();
   
   let day = date.getDate();
-  // let month = date.getMonth() + 1;
   const month = date.toLocaleString('default', { month: 'long' }).substring(0, 3);
   let year = date.getFullYear();
-  // This arrangement can be altered based on how we want the date's format to appear.
+
   let currentDate = `${day} ${month} ${year}`;
 
   const history = useHistory();
 
+  /* Initialize story variable */
   const [storyTitle, setStoryTitle] = useState("My story title");
 
   const handleStoryTitle = (event) => {
     setStoryTitle(event.target.value)
   }
 
+  /* Initialize child name */
   const [childDisplayName, setDisplayName] = useState("Child name");
   const [childFirstName, setChildFirstName] = useState("Child");
   const [childLastName, setChildLastName] = useState("name");
@@ -31,8 +33,7 @@ function CreateAStory() {
     setDisplayName(event.target.value)
   }
 
-  // const [writtenDate, setstoryTitle] = useState("");
-  // const [numberOfLikes, setstoryTitle] = useState("");
+  /* Initialize author name */
   const [authorDisplayName, setAuthorDisplayName] = useState("Phil Dunphy");
   const [authorFirstName, setAuthorFirstName] = useState("Phil");
   const [authorLastName, setAuthorLastName] = useState("Dunphy");
@@ -44,17 +45,21 @@ function CreateAStory() {
     setAuthorDisplayName(event.target.value)
   }
 
+  /* Initialize child order */
   const [childOrder, setChildOrder] = useState("first");
   
   const handleChildOrder = (event) => {
     setChildOrder(event.target.value)
   }
+
+  /* Initialize image */
   const [mainImg, setMainImg] = useState("https://www.pallenz.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png");
 
   function handleMainImg(e){
     setMainImg(e.target.value)
   }
   
+  /* Initialize story */
   const [story, setStory] = useState(
     "Write your story here..."
   );
@@ -62,18 +67,15 @@ function CreateAStory() {
   const handleStory = (event) => {
     setStory(event.target.value)
   }
+
+  /* Initialize relationship */
   const [relationship, setRelationship] = useState("father");
 
   const handleRelationship = (event) => {
     setRelationship(event.target.value)
   }
   
-  // const [selectedImage, setSelectedImage] = useState();
-  
-  // const getImage = (event) => {
-  //   setSelectedImage(event.target.files[0])
-  // }
-
+  /* Handle form submission */
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -99,7 +101,6 @@ function CreateAStory() {
       body: JSON.stringify(itemData),
     })
       .then((r) => r.json())
-      // call the onAddItem prop with the newItem
       .then((newItem) => {
         history.push(`/DisplayStory/${newItem.id}`)
         console.log(newItem)
@@ -150,11 +151,6 @@ function CreateAStory() {
           </select>
         </div>
         <button className="Create-a-story-submit">Submit</button>
-        {/* <input
-          type="file"
-          name="myImage"
-          onChange={getImage}
-        /> */}
       </form>
     </div>
   );

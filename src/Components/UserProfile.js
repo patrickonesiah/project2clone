@@ -25,10 +25,7 @@ function UserProfile() {
         }
       </div>
       <div className="App-user-editButton">
-        <button  onClick={handleEditable}>{isEditable ? "Save" : "Edit"}</button>
-      </div>
-      <div className="App-user-profile-right">
-
+        <button onClick={handleEditable}>{isEditable ? "Save" : "Edit"}</button>
       </div>
     </div>
   );

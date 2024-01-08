@@ -31,14 +31,10 @@ function EditStory() {
                 setNewChildOrder(data.birthOrder)
                 setNewRelationship(data.relationship)
                 setNewMainImg(data.storyMainImage)
-                // const { authorFirstName, authorLastName, birthOrder, childFirstName, childLastName, relationship, storyDescription, storyMainImage, storyTitle } = project
             })
     }, [])
 
     if (!project) return <h2>Loading...</h2>
-
-
-    // const oldAuthor = authorFirstName.concat(' ', authorLastName)
 
     function handleStoryTitle(e) {
         setNewStoryTitle(e.target.value)
@@ -115,9 +111,7 @@ function EditStory() {
                 </div>
                 <div className="Create-a-story-mainImage">
                     <label className="Create-a-story-label">Story main image:</label>
-                    {/* <input className="Create-a-story-input" name={mainImg} value={mainImg} onChange={handleMainImg} /> */}
                     <input className="Create-a-story-input" name={newMainImg} value={newMainImg} onChange={handleNewImg} />
-                    {/* Need to fix the naming of variables for input and put in a handler */}
                 </div>
                 <textarea className="Create-a-story-text-area" name={newStory} value={newStory} onChange={handleStory} />
                 <div className="Create-a-story-childNumber">

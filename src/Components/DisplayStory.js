@@ -6,15 +6,18 @@ function DisplayStory() {
     const [project, setProject] = useState(null);
     const { id } = useParams()
     const history = useHistory();
+
     useEffect(() => {
         fetch(`http://localhost:3001/stories/${id}`)
             .then(r => r.json())
             .then(data => setProject(data))
-    }, [id])
+    }, [])
 
     if (!project) return <h2>Loading...</h2>
 
     const { storyTitle, storyDescription, childFirstName, childLastName, authorFirstName, authorLastName, relationship, writtenDate, numberOfLikes, birthOrder, whoHasSeen, storyMainImage } = project;
+    
+    // Redirect user to edit story page after clicking on edit button
     function handleNewStoryTitle() {
         history.push(`/EditStory/${id}`)
     }

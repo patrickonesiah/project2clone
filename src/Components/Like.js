@@ -28,6 +28,7 @@ function Like({ id , numberOfLikes }) {
     }
 
     return (
+        // Fragment was used to not add extra div to the DOM
         <React.Fragment>
             <span className="numberOfLikes">{newNumberOfLikes}</span>
             <img className="numberOfLikes-image" onClick={handleNumberOfLikes} src="../images/heart.png" alt="Like" width="30" />
