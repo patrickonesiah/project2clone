@@ -9,7 +9,7 @@ function Like({ id , numberOfLikes }) {
 
             newNumberOfLikes = newNumberOfLikes + 1
 
-            fetch(`http://localhost:3001/stories/${id}`, {
+            fetch(`https://narrativegrovedb.onrender.com/stories/${id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",
