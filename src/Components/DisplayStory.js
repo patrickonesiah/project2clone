@@ -17,7 +17,7 @@ function DisplayStory() {
 
     if (!project) return <h2>Loading...</h2>
 
-    const { storyTitle, storyDescription, childFirstName, childLastName, authorFirstName, authorLastName, relationship, writtenDate, numberOfLikes, birthOrder, whoHasSeen, storyMainImage } = project;
+    const { storyTitle, storyDescription, childFirstName, childLastName, authorFirstName, authorLastName, writtenDate, numberOfLikes, birthOrder, storyMainImage } = project;
     
     // Redirect user to edit story page after clicking on edit button
     function handleNewStoryTitle() {

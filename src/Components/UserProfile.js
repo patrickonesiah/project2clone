@@ -15,7 +15,7 @@ function UserProfile() {
   return (
     <div className="App-user-profile">
       <div className="App-user-profile-left">
-        <img className="App-user-profile-img" src="./images/userProfileImage.jpg" alt="User profile image" />
+        <img className="App-user-profile-img" src="./images/userProfileImage.jpg" alt="User profile" />
       </div>
       <div className="App-user-profile-middle">
         {

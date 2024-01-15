@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import Like from './Like';
 
 function Story({ stories, onDeleteStories }) {
-    const { id, storyTitle, storyDescription, childFirstName, childLastName, authorFirstName, authorLastName, relationship, writtenDate, numberOfLikes, birthOrder, whoHasSeen, storyMainImage } = stories;
+    const { id, storyTitle, storyDescription, childFirstName, childLastName, authorFirstName, authorLastName, writtenDate, numberOfLikes, birthOrder, storyMainImage } = stories;
 
-    async function handleDelete() {
+    function handleDelete() {
         if (window.confirm("Are you sure you want to delete?")) {
-            const storiesResponse = await fetch(`https://narrativegrovedb.onrender.com/stories/${id}`, { method: "DELETE" })
+            // const storiesResponse = await fetch(`https://narrativegrovedb.onrender.com/stories/${id}`, { method: "DELETE" })
+            fetch(`https://narrativegrovedb.onrender.com/stories/${id}`, { method: "DELETE" })
             // const stories = await storiesResponse.json()
             onDeleteStories(id)
             console.log(`Delete =${id}`)
