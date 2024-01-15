@@ -1,4 +1,3 @@
-import Header from './Header';
 import Stories from './Stories';
 import UserProfile from './UserProfile';
 import React from 'react';

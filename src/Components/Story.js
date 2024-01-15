@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import Like from './Like';
 
@@ -19,7 +19,7 @@ function Story({ stories, onDeleteStories }) {
             <Link to={`/DisplayStory/${id}`}>
                 <div className="App-story-top">
                     <h2>{childFirstName} {childLastName} - {birthOrder} child</h2>
-                    <img className="App-story-image" src={storyMainImage} alt="Story image" />
+                    <img className="App-story-image" src={storyMainImage} alt="Story" />
                     <h1>{storyTitle}</h1>
                     <p>{storyDescription}</p>
                 </div>
