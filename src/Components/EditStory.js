@@ -77,7 +77,7 @@ function EditStory() {
         const [authorFirstName, authorLastName] = newAuthor.split(' ')
         const [childFirstName, childLastName] = newChildName.split(' ')
 
-        fetch(`https://narrativegrovedb.onrender.com/stories${id}`, {
+        fetch(`https://narrativegrovedb.onrender.com/stories/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
