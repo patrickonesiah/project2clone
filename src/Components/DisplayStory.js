@@ -4,11 +4,13 @@ import Like from './Like';
 
 function DisplayStory() {
     const [project, setProject] = useState(null);
+    //Returns an object of key/value pairs of the dynamic params from the current URL and destruct the ID
     const { id } = useParams()
     const history = useHistory();
 
+    //Fetch details of story on first render
     useEffect(() => {
-        fetch(`http://localhost:3001/stories/${id}`)
+        fetch(`https://narrativegrovedb.onrender.com/stories/${id}`)
             .then(r => r.json())
             .then(data => setProject(data))
     }, [])

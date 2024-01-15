@@ -93,7 +93,7 @@ function CreateAStory() {
       birthOrder: childOrder,
     };
 
-    fetch("http://localhost:3001/stories", {
+    fetch("https://narrativegrovedb.onrender.com/stories", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

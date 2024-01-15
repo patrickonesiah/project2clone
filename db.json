@@ -11,7 +11,7 @@
       "authorLastName": "Dunphy",
       "relationship": "father",
       "writtenDate": "27 Dec 2023",
-      "numberOfLikes": 13,
+      "numberOfLikes": 16,
       "birthOrder": "first"
     },
     {
@@ -111,34 +111,6 @@
       "numberOfLikes": 0,
       "birthOrder": "first",
       "id": 8
-    },
-    {
-      "storyTitle": "My story title",
-      "storyDescription": "Write your story here...",
-      "childFirstName": "Child",
-      "childLastName": "name",
-      "authorFirstName": "Phil",
-      "authorLastName": "Dunphy",
-      "relationship": "father",
-      "storyMainImage": "https://www.pallenz.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png",
-      "writtenDate": "9 Jan 2024",
-      "numberOfLikes": 0,
-      "birthOrder": "first",
-      "id": 9
-    },
-    {
-      "storyTitle": "My story title",
-      "storyDescription": "Write your story here...",
-      "childFirstName": "Child",
-      "childLastName": "name",
-      "authorFirstName": "Phil",
-      "authorLastName": "Dunphy",
-      "relationship": "father",
-      "storyMainImage": "https://www.pallenz.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png",
-      "writtenDate": "9 Jan 2024",
-      "numberOfLikes": 0,
-      "birthOrder": "first",
-      "id": 10
     }
   ]
 }

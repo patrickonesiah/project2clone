@@ -14,7 +14,7 @@ function EditStory() {
     const history = useHistory();
 
     useEffect(() => {
-        fetch(`http://localhost:3001/stories/${id}`)
+        fetch(`https://narrativegrovedb.onrender.com/stories/${id}`)
             .then(r => r.json())
             .then(data => {
                 setProject(data)
@@ -69,7 +69,7 @@ function EditStory() {
         const [authorFirstName, authorLastName] = newAuthor.split(' ')
         const [childFirstName, childLastName] = newChildName.split(' ')
 
-        fetch(`http://localhost:3001/stories/${id}`, {
+        fetch(`https://narrativegrovedb.onrender.com/stories${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",

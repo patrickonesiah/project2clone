@@ -7,8 +7,8 @@ function Story({ stories, onDeleteStories }) {
 
     async function handleDelete() {
         if (window.confirm("Are you sure you want to delete?")) {
-            const storiesResponse = await fetch(`http://localhost:3001/stories/${id}`, { method: "DELETE" })
-            const stories = await storiesResponse.json()
+            const storiesResponse = await fetch(`https://narrativegrovedb.onrender.com/stories/${id}`, { method: "DELETE" })
+            // const stories = await storiesResponse.json()
             onDeleteStories(id)
             console.log(`Delete =${id}`)
         }
