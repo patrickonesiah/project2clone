@@ -9,10 +9,13 @@ function DisplayStory() {
     const history = useHistory();
 
     //Fetch details of story on first render
-    useEffect(() => {
+    const fetchStory = () =>{
         fetch(`https://narrativegrovedb.onrender.com/stories/${id}`)
             .then(r => r.json())
             .then(data => setProject(data))
+    }
+    useEffect(() => {
+        fetchStory()
     }, [])
 
     if (!project) return <h2>Loading...</h2>

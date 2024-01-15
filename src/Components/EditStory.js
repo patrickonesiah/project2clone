@@ -13,26 +13,34 @@ function EditStory() {
     const { id } = useParams()
     const history = useHistory();
 
-    useEffect(() => {
+    const updateData = () => {
         fetch(`https://narrativegrovedb.onrender.com/stories/${id}`)
             .then(r => r.json())
             .then(data => {
                 setProject(data)
-
+    
                 setNewStoryTitle(data.storyTitle)
-
+    
                 const oldAuthor = data.authorFirstName.concat(' ', data.authorLastName)
                 setNewAuthor(oldAuthor)
-
+    
                 const oldChildName = data.childFirstName.concat(' ', data.childLastName)
                 setNewChildName(oldChildName)
-
+    
                 setNewStory(data.storyDescription)
                 setNewChildOrder(data.birthOrder)
                 setNewRelationship(data.relationship)
                 setNewMainImg(data.storyMainImage)
             })
+
+    }
+
+    useEffect(() => {
+        updateData()
     }, [])
+
+
+
 
     if (!project) return <h2>Loading...</h2>
 
