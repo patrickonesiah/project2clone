@@ -19,6 +19,6 @@ Lastly, I encountered a hiccup when I couldn't build my web application due to w
 A future feature I envision implementing is a login system. This would enable logged-in users to view the stories they have written. Additionally, I aim to allow users to invite their loved ones, such as grandparents or cousins, to read these stories. The invitation could be facilitated via email, and I plan to provide a sign-up option for new users to join the web application.
 
 <h2>What have I learned from this project?</h2>
-During this project, I gained insights into the most commonly used React Hooks, understanding how to pass props between components, and mastering the navigation flow of a single-page web application as it transitions between various pages.
+During this project, I gained insights into the most commonly used React Hooks, understanding how to pass props between components, and mastering the navigation flow of a single-page web application as it transitions between various pages. Additionally, I learned about the process of connecting my GitHub repository to Netlify, gaining insights into continuous development practices.
 
 
