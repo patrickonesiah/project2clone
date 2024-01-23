@@ -37,7 +37,7 @@ function EditStory() {
 
     useEffect(() => {
         updateData()
-    })
+    },[])
 
 
 
