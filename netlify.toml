@@ -18,4 +18,4 @@ TERM = "xterm"
 
 package = "netlify-plugin-cypress"
 
-To enable using cache between builds, create a CYPRESS_CACHE_FOLDER and place the Cypress binary inside the node_modules folder.
+#To enable using cache between builds, create a CYPRESS_CACHE_FOLDER and place the Cypress binary inside the node_modules folder.
